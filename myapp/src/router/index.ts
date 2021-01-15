@@ -15,18 +15,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/message/:id',
     component: () => import('../views/ViewMessage.vue')
-  },
-  {
-    path:'/Login',
-    name:'Login',
-    component: () => import('../views/login.vue')
-  },
-  {
-    path:'/Kelas',
-    name:'Kelas',
-    component: () => import('../views/kelas.vue')
   }
-  
 ]
 
 const router = createRouter({
