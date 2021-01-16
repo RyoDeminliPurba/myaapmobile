@@ -22,12 +22,16 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/login.vue')
   },
   {
-    path:'/Kelas',
-    name:'Kelas',
+    path:'/kelas',
+    name:'kelas',
     component: () => import('../views/kelas.vue')
+  },
+  {
+    path: '/kelas/:id',
+    name: 'kelas Detail',
+    component: () => import('../views/KelasDetail.vue')
   }
-  
-]
+  ]
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
